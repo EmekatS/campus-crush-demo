@@ -9,7 +9,7 @@ const Signin = () => {
 
     const toMatchmaking = (e) => {
         e.preventDefault();
-        window.location.href = '/';
+        window.location.href = '/interests';
     }
   return (
     <>

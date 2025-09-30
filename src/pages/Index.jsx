@@ -32,6 +32,9 @@ const Index = () => {
                       <Link to="/signup">
                         <Button lighter="text-[var(--red-shade)] bg-transparent" width="w-80">Sign Up</Button>
                       </Link>
+                      <Link to="/interests">
+                        <Button width="w-80">Intrests</Button>
+                      </Link>
                     </div>
                 </motion.div>
                 <div className='w-2/3 flex-center'>

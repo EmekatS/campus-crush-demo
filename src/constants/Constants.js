@@ -1,0 +1,18 @@
+export const interests = [
+    {interestName: "Fashion"},
+    {interestName: "Music"},
+    {interestName: "Sports"},
+    {interestName: "Art"},
+    {interestName: "Gaming"},
+    {interestName: "Photography"},
+    {interestName: "Gym"},
+    {interestName: "Film & Theathre"},
+    {interestName: "Cooking"},
+    {interestName: "Economy"},
+    {interestName: "Coding"},
+    {interestName: "Travelling"},
+    {interestName: "History"},
+    {interestName: "Cars & Machines"},
+    {interestName: "Culture"},
+    {interestName: "Designing & Decorating"},
+]

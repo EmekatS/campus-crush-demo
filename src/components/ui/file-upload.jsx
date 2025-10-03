@@ -30,7 +30,8 @@ export const FileUpload = ({
   onChange,
   multiple,
   maxFiles = 1,
-  value = []
+  value = [],
+  className
 }) => {
   const [files, setFiles] = useState([]);
   const fileInputRef = useRef(null);
@@ -124,7 +125,7 @@ export const FileUpload = ({
                   damping: 20,
                 }}
                 className={cn(
-                  "relative hover/file:shadow-2xl z-40 bg-pink-50 rounded-full dark:bg-neutral-900 flex items-center justify-center h-32 -mt-4 w-32 max-w-[8rem] mx-auto",
+                  `relative hover/file:shadow-2xl z-40 rounded-full bg-pink-100 dark:bg-neutral-900 flex items-center justify-center h-32 -mt-4 w-32 max-w-[8rem] mx-auto`,
                   // "shadow-[0px_10px_50px_rgba(0,0,0,0.1)]"
                 )}>
                 {isDragActive ? (

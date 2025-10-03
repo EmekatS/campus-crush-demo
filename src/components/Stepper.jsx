@@ -51,7 +51,8 @@ export default function Stepper({
   const handleComplete = () => {
     setDirection(1);
     updateStep(totalSteps + 1);
-    window.location.href = './';
+    onFinalStepCompleted();
+    // window.location.href = './';
   };
 
   return (
@@ -123,8 +124,8 @@ export default function Stepper({
                     <motion.button
                     whileHover={{ x: 5, y: -5, rotate: 1.5 }} 
                     whileTap={{ x: 0, y: 0, rotate: 0 }}
-                    type='submit'
                     onClick={isLastStep ? handleComplete : handleNext}
+                    type='button'
                     className={`${width || 'w-full'} ${lighter || "bg-pink-400"} text-white rounded-3xl px-4 py-2 uppercase tracking-wider primary-font  font-semibold cursor-pointer flex-between gap-2 group`}> 
                     {isLastStep ? 'Complete' : nextButtonText}
                         <div className='size-2 bg-white rounded-full relative group-hover:scale-200 transition-all duration-200'></div>

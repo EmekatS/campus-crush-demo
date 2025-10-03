@@ -14,7 +14,8 @@ export const INITIAL = {
     profileImages: [],
     email: "",
     password: "",
-    cPassword: ""
+    cPassword: "",
+    passwordError: ""
 }
 
 export const signupReducer = (state, action) => {
